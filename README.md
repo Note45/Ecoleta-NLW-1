@@ -12,6 +12,7 @@ O projeto desenvolvido na NLW foi o Ecoleta, uma plataforma de cadastro e pesqui
 
 <img src="images/web/home.png" alt="home" width="400"/>
 <img src="images/web/cadastro.png" alt="cadastro" width="400"/>
+<img src="images/web/success.png" alt="success" width="400"/>
 
 ## Mobile - React Native com TypeScript
 
