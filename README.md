@@ -4,7 +4,7 @@ O NLW é uma semana prática com muito código, desafios, networking e um ú
 
 # Descrição 
 
-O projeto desenvolvido na NLW foi o Ecoleta, uma plataforma de cadastro e pesquisa de pontos para reciclagem de resíduos. O objetivo era desenvolver tanto o back end da aplicação com NodeJS(Rest API) quando suas versões web(React) e mobile(React Native) integradas com o Typescript.
+O projeto desenvolvido na NLW foi o Ecoleta, uma plataforma de cadastro e pesquisa de pontos para reciclagem de resíduos. O objetivo era desenvolver tanto o back end da aplicação com NodeJS(Rest API) quando suas versões web(React) e mobile(React Native) integradas com o Typescript. Para o projeto mobile foi utilizado o expo como base de desenvolvimento.
 
 # Como o projeto está atualmente
 
