@@ -146,9 +146,7 @@ const CreatePoint = () => {
 
     await api.post('points', data);
 
-    alert('Ponto de coleta cadastrado!');
-
-    history.push('/');
+    history.push('/success');
   }
 
   return(
@@ -274,9 +272,10 @@ const CreatePoint = () => {
             ))} 
           </ul>
         </fieldset>
+        
 
         <button type='submit'>
-          Cadastrar ponto de coleta
+            Cadastrar ponto de coleta
         </button>
       </form>
     </div>

@@ -25,7 +25,7 @@ O projeto desenvolvido na NLW foi o Ecoleta, uma plataforma de cadastro e pesqui
 
 ## Web - React com TypeScript
 
-- [ ] Adicionar tela de sucesso ao cadastrar um novo ponto de coleta;
+- [X] Adicionar tela de sucesso ao cadastrar um novo ponto de coleta;
 
 - [ ] Adicionar tela de busca de pontos de coleta.
 
