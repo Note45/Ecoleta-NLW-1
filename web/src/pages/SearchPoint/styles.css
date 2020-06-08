@@ -1,0 +1,42 @@
+.containerSearchPoint {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0E0A14;
+}
+
+.containerSearchPoint #city {
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  font-size: larger;
+  border: none;
+  border-radius: 8px;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+
+.containerSearchPoint #uf {
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  font-size: larger;
+  border: none;
+  border-radius: 8px;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+
+.containerSearchPoint .buttonSearch {
+  width: 300px;
+  height: 50px;
+  background-color: #34CB79;
+  border-radius: 8px;
+  font-size: large;
+}
+
+.containerSearchPoint .buttonSearch .buttonText {
+  color: #FFFFFF;
+}
