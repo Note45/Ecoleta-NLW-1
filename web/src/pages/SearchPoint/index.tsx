@@ -1,5 +1,6 @@
 import React, { useState, ChangeEvent, useEffect} from 'react';
 import axios from 'axios';
+import { useHistory } from 'react-router-dom';
 
 import './styles.css';
 
@@ -17,6 +18,8 @@ const SearchPoint = () => {
 
   const [selectedUf, setSelectedUf] = useState('');
   const [selectedCity, setSelectedCity] = useState('');
+
+  const history = useHistory();
 
   useEffect(() => {
     axios.get<IBGEUFResponse[]>('https://servicodados.ibge.gov.br/api/v1/localidades/estados')
@@ -43,9 +46,17 @@ const SearchPoint = () => {
       return;
     }
 
-    //go to page ListPointsSearch
+    const Data = {
+      selectedUf,
+      selectedCity
+    }
+
+    history.push({
+      pathname: '/points-list',
+      state: {Data}
+    });
   }
-  
+
   function handleSelectedUf(event: ChangeEvent<HTMLInputElement>) {
     const uf = event.target.value;
 

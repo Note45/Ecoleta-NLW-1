@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import CreatePoint from './pages/CreatePoint';
 import SuccessRegister from './pages/SuccessRegister';
 import SearchPoint from './pages/SearchPoint';
+import PointsList from './pages/PointsList';
 
 const Routes = () => {
   return(
@@ -13,6 +14,7 @@ const Routes = () => {
       <Route component={CreatePoint} path='/create-point' />
       <Route component={SuccessRegister} path='/success'/>
       <Route component={SearchPoint} path='/search-point'/>
+      <Route component={PointsList} path='/points-list'/>
     </BrowserRouter>
   );
 }
