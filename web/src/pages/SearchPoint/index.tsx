@@ -45,7 +45,7 @@ const SearchPoint = () => {
 
     //go to page ListPointsSearch
   }
-
+  
   function handleSelectedUf(event: ChangeEvent<HTMLInputElement>) {
     const uf = event.target.value;
 
@@ -67,8 +67,15 @@ const SearchPoint = () => {
         onChange={handleSelectedUf}
         placeholder='Digite o estado(UF)'
         maxLength={2}
+        list='ufs'
         required
       />
+
+      <datalist id='ufs'>
+        {ufs.map(uf => (
+          <option key={uf} value={uf} />
+        ))}
+      </datalist>
 
       <input
         type='text'
@@ -76,8 +83,15 @@ const SearchPoint = () => {
         id='city'
         onChange={handleSelectedCity}
         placeholder='Digite a Cidade'
+        list='cities'
         required
       />
+      
+      <datalist id='cities'>
+        {cities.map(city => (
+          <option key={city} value={city} />
+        ))}
+      </datalist>
       
       <button 
         className='buttonSearch'
