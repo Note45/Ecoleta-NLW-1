@@ -1,0 +1,25 @@
+.Point {
+  margin: 20px;
+  padding: 20px;
+  width: 355px;
+  height: 404px;
+}
+
+.Point img {
+  width: 355px;
+  height: 231px;
+  border-radius: 8px;
+}
+
+.Point h1{
+  padding-top: 20px;
+}
+
+.Point h3{
+  padding-top: 20px;
+  color: #34CB79;
+}
+
+.Point p{
+  padding-top: 10px;
+}

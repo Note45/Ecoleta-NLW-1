@@ -1,0 +1,31 @@
+.containerPointList header {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerPointList header a {
+  color: var(--title-color);
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.containerPointList header a svg {
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+.containerPointList p {
+  margin: 20px;
+}
+
+.containerPointList .ListPoints {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

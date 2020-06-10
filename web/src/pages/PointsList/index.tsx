@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
+import { FiArrowLeft } from 'react-icons/fi'
 import api from '../../services/api';
+
+import logo from '../../assets/logo.svg';
+import Point from '../../components/Point';
+
+import './styles.css';
 
 interface Point {
   city: string;
@@ -27,10 +33,29 @@ const PointsList = () => {
 
         setPointsId(ids);
       })
-  }, []);
+  }, [Data.selectedCity, Data.selectedUf]);
 
   return (
-    <h1>Page Points List</h1>
+    <div className='containerPointList'>
+      <header>
+        <img src={logo} alt='Ecoleta'/>
+
+        <Link to="/">
+          <FiArrowLeft />
+          Voltar para home
+        </Link>
+      </header>
+
+      <p>
+        {`${pointsId.length} pontos encontrados`}
+      </p>
+
+      <div className='ListPoints'>
+        {pointsId.map(id => (
+          <Point key={id} pointId={id}/>
+        ))}
+      </div>
+    </div>
   );
 }
 
