@@ -10,7 +10,7 @@ const SuccessRegister = () => {
   setTimeout(() => history.push('/'), 2000)
 
   return(
-    <div className='container'>
+    <div className='containerSuccessPage'>
       <Icon size={100} color='#34CB79'/>
       <h1 className='successText'>Cadastro Concluído!</h1>
     </div>

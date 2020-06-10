@@ -1,7 +1,12 @@
-.container {
+.containerSuccessPage {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #0E0A14;
+}
+
+.containerSuccessPage h1 {
+  color: #F0F0F5;
 }
