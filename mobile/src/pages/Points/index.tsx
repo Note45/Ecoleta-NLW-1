@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, TouchableOpacity, Text, ScrollView, Image, Alert } from 'react-native';
 import { Feather as Icon } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute} from '@react-navigation/native';
 import Constants from 'expo-constants';
 import MapView, { Marker } from 'react-native-maps';
 import { SvgUri }  from 'react-native-svg';
@@ -12,6 +12,11 @@ interface Item {
   id: number;
   title: string;
   image_url: string;
+}
+
+interface Params {
+  selectedUf: string;
+  selectedCity: string;
 }
 
 interface Point {
@@ -31,6 +36,9 @@ const Points = () => {
   const [initialPosition, setInitialPosition] = useState<[number, number]>([0, 0]);
 
   const navigation = useNavigation();
+  const route = useRoute();
+
+  const { selectedUf, selectedCity } = route.params as Params;
 
   useEffect(() => {
     async function loadPosition() {
@@ -63,8 +71,8 @@ const Points = () => {
   useEffect(() => {
     api.get('points', {
       params: {
-        city: 'Teresina',
-        uf: 'PI',
+        city: selectedCity,
+        uf: selectedUf,
         items: selectedItems
       }
     }).then(response => {
